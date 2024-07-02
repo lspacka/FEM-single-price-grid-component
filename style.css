@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  border: solid 1px black;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 auto;
+  width: fit-content;
+  min-height: 80vh;
+  max-width: 65vw;
+}
+
+.section {
+  padding: 50px;
+}
+
+.lower-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
