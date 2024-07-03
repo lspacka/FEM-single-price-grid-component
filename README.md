@@ -11,7 +11,7 @@ Users should be able to:
 
 ![](./screenshot.png)
 
-- [Solution](https://your-solution-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/single-price-grid-component-html---css-L1Zec1JTby)
 - [Live Site](https://lspacka.github.io/FEM-single-price-grid-component/)
 
 ### Built with

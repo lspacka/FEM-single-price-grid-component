@@ -134,4 +134,5 @@ span:nth-of-type(2) {
   #lower-section-2 {
     border-radius: 0 0 10px 10px;
   }
+  /* all this redundance because .section wasnt being targeted. fukin css... */
 }
