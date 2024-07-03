@@ -108,6 +108,11 @@ span:nth-of-type(2) {
   color: white;
 }
 
+.btn:hover {
+  cursor: pointer;
+  background-color: hsl(71, 73%, 59%);
+}
+
 @media screen and (max-width: 500px) {
   .container {
     grid-template-rows: 1fr 2fr;
