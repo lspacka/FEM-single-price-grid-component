@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,23 +10,117 @@ body {
   display: grid;
   place-content: center;
   min-height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+  color: hsl(204, 43%, 93%);
+  font-family: 'karla';
 }
 
 .container {
-  border: solid 1px black;
+  /* border: solid 1px black; */
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1.2fr;
+  height: 70%;
+  /* height: fit-content; */
+  width: 59vw;
+  min-width: 375px;
+  /* border-collapse: separate;
+  border-radius: 5px; */
   margin: 0 auto;
-  width: fit-content;
-  min-height: 80vh;
-  max-width: 65vw;
 }
 
 .section {
-  padding: 50px;
+  /* border: solid 1px black; */
+  padding: 3.1rem;
+}
+
+#upper-section {
+  background-color: white;
+  color: hsl(218, 22%, 67%);
+  font-size: 1.1rem;
+  padding: 3.1rem 0 3.1rem 3.1rem;
+  border-radius: 10px 10px 0 0;
+}
+
+#upper-section>h3 {
+  color: hsl(179, 62%, 43%);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+#upper-section>h4 {
+  color: hsl(71, 73%, 54%);
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+}
+
+#upper-section>p {
+  line-height: 1.8rem;
 }
 
 .lower-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+#lower-section-1 {
+  background-color: hsl(179, 62%, 43%);
+  border-radius: 0 0 0 10px;
+  font-size: 1.14rem;
+  color: white;
+}
+
+.price {
+  margin-bottom: 0.6rem;
+}
+
+span:nth-of-type(1) {
+  font-size: 2.2rem;
+  margin-right: 1.3rem;
+  font-weight: bold;
+}
+
+span:nth-of-type(2) {
+  color: hsl(205, 15%, 84%);
+}
+
+#lower-section-2 {
+  background-color: #4abebd;
+  border-radius: 0 0 10px 0;
+  /* had to do it like this cos border-radius didnt work on any of the parents for some reason. fukin css...*/
+}
+
+#lower-section-2 {
+  font-size: 1.02rem;
+  line-height: 1.44rem;
+}
+
+.lower-section > * > h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.btn {
+  width: 100%;
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  margin-top: 2rem;
+  height: 50px;
+  border-radius: 7px;
+  font-family: 'karla';
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+@media (width < 500px) {
+  .container {
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .lower-section {
+    /* grid-template-rows: 1fr 1fr; */
+    display: flex;
+    flex-direction: column;
+  }
 }
